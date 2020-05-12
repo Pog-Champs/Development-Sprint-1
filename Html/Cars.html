@@ -1,290 +1,202 @@
 <!DOCTYPE html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-    <title>POG_Champs</title>
-</head>
-<body>
-    <div class="change-colour">
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+        <title> POG Champs</title>
+    </head>
+    <body>
+        <div class="change-colour">
         <div class="light-mode">
             <button onclick="myFunction()">Toggle dark mode</button>
         </div>
         <div class="lings_cars">
-            <h1 class='serif'> Cars</h1>
+            <h1 class='serif'> Home </h1>
         </div>
         <div class="nav_bar">
             <nav>
                 <ul>
-                    <li><a href='../html/Home.html'>Home</a>
-                    <li><a href='../html/Cars.html'>Cars</a>
-                    <li><a href='#'>About</a>
+                    <li><a href="../html/Home.html">Home</a></li>
+                    <li><a href='../html/Cars.html'>Cars </a> </li>
+                    <li><a href='#'>About</a> </li>
                 </ul>
             </nav>
         </div>
-        <div class="wrapper">
-            <h2 class="toyota-item" id='toyota'>Toyota</h2>
-            <div class="item">
-                <div class="item-container">
-                    <div class="images">
-                        <img src="../images/../images/takumi.jpg" />
-                    </div>
-                    <div class="product">
-                        <p>Hatchback</p>
-                        <h1>Toyota AE86  Corolla Trueno</h1>
-                        <h2>$21,000</h2>
-                        <p class="decor">The fastest car in the world. No car can take hairpin turns like the legendary ae86. Made famous by Keichi Tsuchiha and Initial D</p>
-                        <div class="buttons">
-                            <a href="view.html"><button  class="add">View Details</button></a>
-                            <button id="add" class="cart"><span> <i class="fas fa-shopping-cart"></i> </span></button>
+        <div class="models">
+          <h2>Welcome to PogChamps Automotives</h2>
+            <h3>Our Automotive Manufacturers</h4>
+            <h4>Below you can find the list of automotive manafacturers
+                included in our sales. For social media information of each
+                manafacturers please click the corrosponding icons.
+            </h3>
+        </div>
+        <div class="display_models">
+            <div class="toyota">
+                <div class="outer">
+                    <div class="card">
+                        <div class="profile-sidebar">
+                            <img class="profile-image"src="../images/toyo.png" width="100px" height="100px" alt="">
+                            <ul class="social-list">
+                                <li class="social-item"> <a class="social-link" href="https://www.facebook.com/TOYOTA.Global/?ref=br_rs"> <i class="fab fa-facebook-square"></i> </a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://www.instagram.com/toyota_aus/?hl=en"> <i class="fab fa-instagram-square"></i></a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://twitter.com/Toyota_Aus?s=20"> <i class="fab fa-twitter-square"></i> </a> </li>
+                            </ul>
+                        </div>
+                        <div class="profile-main">
+                            <h2 class='profile-name'> Toyota </h2>
+                            <p class='profile-position'> Automotive Manafacturer</p>
+                            <p class='profile-body'> Toyota Motor Corporation is a Japanese multinational automotive manufacturer headquartered in
+                                Toyota, Aichi, Japan. In 2017, Toyota's corporate structure consisted of 364,445 employees worldwide and, as of December
+                                2019, was the tenth-largest company in the world by revenue. Wikipedia
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- The Modal -->
-            <div  class="modal" id="myModal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <form class="form" action="index.html" method="post">
-                        <div class="app-container">
-                            <div class="top-box">
-                                <p>  CHECKOUT </p>
-                            </div>
-                            <div class="middle-box">
-                                <h1>21,000 <span>$</span> </h1>
-                                <p>Pay To xyz company</p>
-                            </div>
-                            <div class="bottom-box">
-                                <button type="button" class="payment-option-btn">Pay with
-                                Paypal </button>
-                                <button type="button" class="payment-option-btn">Payusing Net
-                                Banking </button>
-                                <div class="card-details">
-                                    <p> Pay using credit or debit card</p>
-                                    <div class="card-num-field-group">
-                                        <label>Card Number</label> <br>
-                                        <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
-                                    </div>
-                                    <div class="date-field-group">
-                                        <label>Expiry Date</label> <br>
-                                        <input type="text" class="date-field" placeholder="mm">
-                                        <input type="text" class="date-field" placeholder="yyyy">
-                                    </div>
-                                    <div class="cvc-field-group">
-                                        <label>CVC</label> <br>
-                                        <input type="password" class="cvc-field" placeholder="xxx">
-                                    </div>
-                                    <div class="name-field-group">
-                                        <label>Card Holder Name</label> <br>
-                                        <input type="text" class="cvc-field" placeholder="Ful Name">
-                                    </div>
-                                    <button type="button" class="pay-btn">Pay Now</button>
-                                </div>
-                            </div>
+            <div class="masda">
+                <div class="outer">
+                    <div class="card">
+                        <div class="profile-sidebar">
+                            <img class="profile-image"src="../images/msada-logo.jpg" width="100px" height="100px" alt="">
+                            <ul class="social-list">
+                                <li class="social-item"> <a class="social-link" href="https://www.facebook.com/mazdaaus/?ref=br_rs"> <i class="fab fa-facebook-square"></i> </a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://www.instagram.com/mazda_jp/?hl=en"> <i class="fab fa-instagram-square"></i></a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://twitter.com/MazdaAus?s=20"> <i class="fab fa-twitter-square"></i> </a> </li>
+                            </ul>
                         </div>
-                    </form>
+                        <div class="profile-main">
+                            <h2 class='profile-name'> Mazda </h2>
+                            <p class='profile-position'> Automotive Manafacturer</p>
+                            <p class='profile-body'>Masda Motor Corporation is a Japanese multinational automotive manufacturer headquartered in Mazda, Aichi, Japan. In 2017, Mazdas's corporate structure consisted of 364,445 employees worldwide and, as of December 2019, was the tenth-largest company in the world by revenue. Wikipedia
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="item-container">
-                    <div class="images">
-                        <img src="../images/takumi.jpg" />
+            <div class="nissan">
+                <div class="outer">
+                    <div class="card">
+                        <div class="profile-sidebar">
+                            <img class="profile-image"src="../images/nissan_logo.jpg" width="100px" height="100px" alt="">
+                            <ul class="social-list">
+                                <li class="social-item"> <a class="social-link" href="https://www.facebook.com/nissanaustralia/?ref=br_rs"> <i class="fab fa-facebook-square"></i> </a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://www.instagram.com/nissan/?hl=en"> <i class="fab fa-instagram-square"></i></a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://twitter.com/NissanUSA?s=20"> <i class="fab fa-twitter-square"></i> </a> </li>
+                            </ul>
+                        </div>
+                        <div class="profile-main">
+                            <h2 class='profile-name'> Nissan </h2>
+                            <p class='profile-position'> Automotive Manafacturer</p>
+                            <p class='profile-body'>Nissan Motor Corporation is a Japanese multinational automotive manufacturer headquartered in Nissan, Aichi, Japan. In 2017, Nissans's corporate structure consisted of 364,445 employees worldwide and, as of December 2019, was the tenth-largest company in the world by revenue. Wikipedia
+                            </p>
+                        </div>
                     </div>
-                    <div class="product">
-                        <p>Hatchback</p>
-                        <h1>Toyota AE86  Corolla Trueno</h1>
-                        <h2>$22,000</h2>
-                        <p class="decor">The fastest car in the world. No car can take hairpin turns like the legendary ae86. Made famous by Keichi Tsuchiha and Initial D</p>
-                        <div class="buttons">
-                            <a href="view.html"><button class="add1">View Details</button></a>
-                            <button id="add1"class="cart"><span> <i class="fas fa-shopping-cart"></i> </span></button>
+                </div>
+            </div>
+            <div class="subaru">
+                <div class="outer">
+                    <div class="card">
+                        <div class="profile-sidebar">
+                            <img class="profile-image"src="../images/suby.jpg" width="100px" height="100px" alt="">
+                            <ul class="social-list">
+                                <li class="social-item"> <a class="social-link" href="https://www.facebook.com/SubaruAustralia/?ref=br_rs"> <i class="fab fa-facebook-square"></i> </a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://www.instagram.com/subaruaustralia/?hl=en"> <i class="fab fa-instagram-square"></i></a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://twitter.com/subaru_usa?s=20"> <i class="fab fa-twitter-square"></i> </a> </li>
+                            </ul>
+                        </div>
+                        <div class="profile-main">
+                            <h2 class='profile-name'> Subaru </h2>
+                            <p class='profile-position'> Automotive Manafacturer</p>
+                            <p class='profile-body'> Subaru Motor Corporation is a Japanese multinational automotive manufacturer headquartered in subaru, Aichi, Japan. In 2017, Subaru's corporate structure consisted of 364,445 employees worldwide and, as of December 2019, was the tenth-largest company in the world by revenue. Wikipedia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mitsubishi">
+                <div class="outer">
+                    <div class="card">
+                        <div class="profile-sidebar">
+                            <img class="profile-image"src="../images/mitsubi.jpg" width="100px" height="100px" alt="">
+                            <ul class="social-list">
+                                <li class="social-item"> <a class="social-link" href="https://www.facebook.com/MitsubishiMotors.en/?ref=br_rs"> <i class="fab fa-facebook-square"></i> </a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://www.instagram.com/mitsubishimotorsofficial/?hl=en"> <i class="fab fa-instagram-square"></i></a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://twitter.com/mitsucars?s=20"> <i class="fab fa-twitter-square"></i> </a> </li>
+                            </ul>
+                        </div>
+                        <div class="profile-main">
+                            <h2 class='profile-name'> Mitsubishi </h2>
+                            <p class='profile-position'> Automotive Manafacturer</p>
+                            <p class='profile-body'> Mitsubishi Motor Corporation is a Japanese  automotive manufacturer headquartered in Mitsubishi, Aichi, Japan. In 2017, Mitsubishi's corporate structure consisted of 364,445 employees worldwide and, as of December 2019, was the tenth-largest company in the world by revenue. Wikipedia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="honda">
+                <div class="outer">
+                    <div class="card">
+                        <div class="profile-sidebar">
+                            <img class="profile-image"src="../images/honda.jpg" width="100px" height="100px" alt="">
+                            <ul class="social-list">
+                                <li class="social-item"> <a class="social-link" href="https://www.facebook.com/Honda/?ref=br_rs"> <i class="fab fa-facebook-square"></i> </a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://www.instagram.com/honda/?hl=en"> <i class="fab fa-instagram-square"></i></a> </li>
+                                <li class="social-item"> <a class="social-link" href="https://twitter.com/Honda"> <i class="fab fa-twitter-square"></i> </a> </li>
+                            </ul>
+                        </div>
+                        <div class="profile-main">
+                            <h2 class='profile-name'> Honda </h2>
+                            <p class='profile-position'> Automotive Manafacturer</p>
+                            <p class='profile-body'> Honda Motor Corporation is a Japanese multinational automotive manufacturer headquartered in Honda, Aichi, Japan. In 2017, Honda's corporate structure consisted of 364,445 employees worldwide and, as of December 2019, was the tenth-largest company in the world by revenue. Wikipedias
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- The Modal -->
-        <div  class="modal1" id="myModal1" >
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close1">&times;</span>
-                <form class="form" action="index.html" method="post">
-                    <div class="app-container">
-                        <div class="top-box">
-                            <p>  CHECKOUT </p>
-                        </div>
-                        <div class="middle-box">
-                            <h1>22000 <span>$</span> </h1>
-                            <p>Pay To xyz company</p>
-                        </div>
-                        <div class="bottom-box">
-                            <button type="button" class="payment-option-btn">Pay with
-                            Paypal </button>
-                            <button type="button" class="payment-option-btn">Payusing Net
-                            Banking </button>
-                            <div class="card-details">
-                                <p> Pay using credit or debit card</p>
-                                <div class="card-num-field-group">
-                                    <label>Card Number</label> <br>
-                                    <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
-                                </div>
-                                <div class="date-field-group">
-                                    <label>Expiry Date</label> <br>
-                                    <input type="text" class="date-field" placeholder="mm">
-                                    <input type="text" class="date-field" placeholder="yyyy">
-                                </div>
-                                <div class="cvc-field-group">
-                                    <label>CVC</label> <br>
-                                    <input type="password" class="cvc-field" placeholder="xxx">
-                                </div>
-                                <div class="name-field-group">
-                                    <label>Card Holder Name</label> <br>
-                                    <input type="text" class="cvc-field" placeholder="Full Name">
-                                </div>
-                                <button type="button" class="pay-btn">Pay Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="wrapper">
-            <h2 class="mazda-item" id='mazda'>Mazda</h2>
-            <div class="item">
-                <div class="item-container">
-                    <div class="images">
-                        <img src="../images/takumi.jpg" />
-                    </div>
-                    <div class="product">
-                        <p>Hatchback</p>
-                        <h1>Toyota AE86  Corolla Trueno</h1>
-                        <h2>$23,000</h2>
-                        <p class="decor">The fastest car in the world. No car can take hairpin turns like the legendary ae86. Made famous by Keichi Tsuchiha and Initial D</p>
-                        <div class="buttons">
-                            <a href="view.html"><button class="add">View Details</button></a>
-                            <button id="add2" class="cart"><span> <i class="fas fa-shopping-cart"></i> </span></button>
-                        </div>
-                    </div>
+        <div class="loans">
+            <h2 class="serif"> Models </h2>
+            <p>Search below for the list of brands. You will be redirected to the corrosponding brand chosen.</p>
+            <div class="model-filter">
+                <input type="text" placeholder="Search for car models">
+                <ul>
+                    <div class="model-content">
+                        <li><a href="../html/Cars.html#toyota">Toyota</a></li>
+                        <li><a href='../html/Cars.html#mazda'>Masda</a></li>
+                        <li><a href='../html/Cars.html#nissan'>Nissan</a></li>
+                        <li><a href='../html/Cars.html#subaru'>subaru</a></li>
+                        <li><a href='../html/Cars.html#mitsubishi'>Mitsubishi</a> </li>
+                        <li><a href='../html/Cars.html#honda'>Honda</a></li>
+                </ul>
                 </div>
             </div>
-            <!-- The Modal -->
-            <div  class="modal2" id="myModal2" >
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close2">&times;</span>
-                    <form class="form" action="index.html" method="post">
-                        <div class="app-container">
-                            <div class="top-box">
-                                <p>  CHECKOUT </p>
-                            </div>
-                            <div class="middle-box">
-                                <h1>20000 <span>$</span> </h1>
-                                <p>Pay To xyz company</p>
-                            </div>
-                            <div class="bottom-box">
-                                <button type="button" class="payment-option-btn">Pay with
-                                Paypal </button>
-                                <button type="button" class="payment-option-btn">Payusing Net
-                                Banking </button>
-                                <div class="card-details">
-                                    <p> Pay using credit or debit card</p>
-                                    <div class="card-num-field-group">
-                                        <label>Card Number</label> <br>
-                                        <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
-                                    </div>
-                                    <div class="date-field-group">
-                                        <label>Expiry Date</label> <br>
-                                        <input type="text" class="date-field" placeholder="mm">
-                                        <input type="text" class="date-field" placeholder="yyyy">
-                                    </div>
-                                    <div class="cvc-field-group">
-                                        <label>CVC</label> <br>
-                                        <input type="password" class="cvc-field" placeholder="xxx">
-                                    </div>
-                                    <div class="name-field-group">
-                                        <label>Card Holder Name</label> <br>
-                                        <input type="text" class="cvc-field" placeholder="Ful Name">
-                                    </div>
-                                    <button type="button" class="pay-btn">Pay Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+            <div class="media">
+                <h1>
+                    <p>Get in touch!</p>
+                </h1>
+                <p>We love to hear from you. You can drop us a message or give us a ring. </p>
+                <div class="contactcontainer">
+                    <img src="../images/../images/email-100px.png" alt="email" class="image">
+                    <div class="contactoverlay">
+                        <div class="text">email@pogchamps.com.au</div>
+                    </div>
                 </div>
+                <div class="contactcontainer">
+                    <img src="../images/../images/phone-100px.png" alt="phone" class="image">
+                    <div class="contactoverlay">
+                        <div class="text">(08) 8946 6621</div>
+                    </div>
+                </div>
+                <br/>
             </div>
-            <div class="item">
-                <div class="item-container">
-                    <div class="images">
-                        <img src="../images/takumi.jpg" />
-                    </div>
-                    <div class="product">
-                        <p>Hatchback</p>
-                        <h1>Toyota AE86  Corolla Trueno</h1>
-                        <h2>$24,000</h2>
-                        <p class="decor">The fastest car in the world. No car can take hairpin turns like the legendary ae86. Made famous by Keichi Tsuchiha and Initial D</p>
-                        <div class="buttons">
-                            <a href="view.html"><button class="add3">View Details</button></a>
-                            <button class="cart"><span> <i class="fas fa-shopping-cart"></i> </span></button>
-                        </div>
-                    </div>
+            <div id="copyright">
+                <div class="container">
+                    <a>PogChamps &copy;	</a>
                 </div>
             </div>
         </div>
-        <!-- The Modal -->
-        <div  class="modal1" id="myModal1" >
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close1">&times;</span>
-                <form class="form" action="index.html" method="post">
-                    <div class="app-container">
-                        <div class="top-box">
-                            <p>  CHECKOUT </p>
-                        </div>
-                        <div class="middle-box">
-                            <h1>20000 <span>$</span> </h1>
-                            <p>Pay To xyz company</p>
-                        </div>
-                        <div class="bottom-box">
-                            <button type="button" class="payment-option-btn">Pay with
-                            Paypal </button>
-                            <button type="button" class="payment-option-btn">Payusing Net
-                            Banking </button>
-                            <div class="card-details">
-                                <p> Pay using credit or debit card</p>
-                                <div class="card-num-field-group">
-                                    <label>Card Number</label> <br>
-                                    <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
-                                </div>
-                                <div class="date-field-group">
-                                    <label>Expiry Date</label> <br>
-                                    <input type="text" class="date-field" placeholder="mm">
-                                    <input type="text" class="date-field" placeholder="yyyy">
-                                </div>
-                                <div class="cvc-field-group">
-                                    <label>CVC</label> <br>
-                                    <input type="password" class="cvc-field" placeholder="xxx">
-                                </div>
-                                <div class="name-field-group">
-                                    <label>Card Holder Name</label> <br>
-                                    <input type="text" class="cvc-field" placeholder="Ful Name">
-                                </div>
-                                <button type="button" class="pay-btn">Pay Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <br/>
-        <div id="copyright">
-            <div class="container">
-                <a>PogChampssss &copy;	</a>
-            </div>
-        </div>
-    </div>
-</body>
-<script src="../Java-script/script.js"></script>
-<script src="../Java-script/model.js"> </script>
+    </body>
+    <script src="../java-script/script.js"> </script>
 </html>
