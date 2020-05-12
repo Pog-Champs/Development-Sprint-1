@@ -20,10 +20,9 @@ function filter(){
 
 
   }
-}
 
 
 function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
+ var element = document.body;
+ element.classList.toggle("dark-mode");
 }
